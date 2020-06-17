@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">KajobApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_configuration">Configuración</string>
+    <string name="title_help">Ayuda</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="billing">Facturación</string>
+    <string name="reports">Reportes</string>
+    <string name="loans">Préstamos</string>
+    <string name="clients">Clientes</string>
+    <string name="inventory">Inventario</string>
+    <string name="sales">Ventas</string>
+    <string name="partners">Socios</string>
+    <string name="my_businessman">Mi Red</string>
+    <string name="new_client">Agregar cliente</string>
+    <string name="new_businessman">Agregar empresario</string>
+    <string name="new_partner">Agregar socio</string>
+    <string name="detail_client">Detalle Cliente</string>
+    <string name="detail_partner">Detalle Socio</string>
+    <string name="detail_product">Detalle Producto</string>
+    <string name="detail_businessman">Detalle Empresario</string>
+    <string name="user_name">Nombre</string>
+    <string name="user_identification">Cédula</string>
+    <string name="user_phone">Teléfono</string>
+    <string name="user_email">Correo</string>
+    <string name="user_location">Dirección / Domicilio</string>
+    <string name="user_birthdate">Fecha nacimiento (AÑO-MES-DIA)</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_save">Guardar</string>
+    <string name="client_information">Información del cliente</string>
+    <string name="update">Actualizar</string>
+    <string name="edit_info_client">Editar información</string>
+    <string name="delete_client">Eliminar cliente</string>
+    <string name="cal_client">Llamar cliente</string>
+    <string name="title_inventory">Inventario de Productos</string>
+    <string name="edit_product">Editar Producto</string>
+    <string name="product_sku">SKU</string>
+    <string name="product_name">Nombre Producto</string>
+    <string name="product_category">Categoría</string>
+    <string name="product_description">Descripción</string>
+    <string name="product_quantity">Cantidad</string>
+    <string name="product_cost">Costo unidad</string>
+    <string name="product_price">Precio unidad</string>
+    <string name="total_price_inventory">Precio inventario</string>
+</resources>

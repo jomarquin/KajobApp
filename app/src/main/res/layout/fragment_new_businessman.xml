@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NewBusinessmanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_user_round"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldNameNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Nombre">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextNameNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_identification"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldIdentificationNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Cédula">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextIdentificationNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_codemp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldCodempNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Código empresario">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextCodempNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldPassNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Contraseña empresario">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPassNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_call"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldPhoneNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Teléfono">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPhoneNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_mail"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldMailNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Correo">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextMailNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pass_mail"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldPassMailNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Contraseña correo">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPassMailNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldLocationNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Dirección / Domicilio">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextLocationNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_birthdate"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldBirthdateNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Fecha nacimiento">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextBirthdateNet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:focusable="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegisterBusinessman"
+            style="@style/Widget.KajobApp.Button"
+            app:icon="@drawable/ic_save_24"
+            app:iconTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Guardar" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

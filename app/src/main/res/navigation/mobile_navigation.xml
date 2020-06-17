@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.kajoba.app.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_salesFragment"
+            app:destination="@id/salesFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_clientsFragment"
+            app:destination="@id/clientsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_loansFragment"
+            app:destination="@id/loansFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_reportsFragment"
+            app:destination="@id/reportsFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_billingFragment"
+            app:destination="@id/billingFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_businessmanFragment"
+            app:destination="@id/businessmanFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_partnersFragment"
+            app:destination="@id/partnersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.kajoba.app.ui.dashboard.DashboardFragment"
+        android:label="@string/title_configuration"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.kajoba.app.ui.notifications.NotificationsFragment"
+        android:label="@string/title_help"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.kajoba.app.Fragments.SalesFragment"
+        android:label="@string/sales"
+        tools:layout="@layout/fragment_sales" />
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.kajoba.app.Fragments.InventoryFragment"
+        android:label="@string/inventory"
+        tools:layout="@layout/fragment_inventory" >
+        <action
+            android:id="@+id/action_inventoryFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientsFragment"
+        android:name="com.kajoba.app.Fragments.ClientsFragment"
+        android:label="@string/clients"
+        tools:layout="@layout/fragment_clients" >
+        <action
+            android:id="@+id/action_clientsFragment_to_newClientFragment"
+            app:destination="@id/newClientFragment" />
+        <action
+            android:id="@+id/action_clientsFragment_to_detailClientFragment"
+            app:destination="@id/detailClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loansFragment"
+        android:name="com.kajoba.app.Fragments.LoansFragment"
+        android:label="@string/loans"
+        tools:layout="@layout/fragment_loans" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.kajoba.app.Fragments.ReportsFragment"
+        android:label="@string/reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/billingFragment"
+        android:name="com.kajoba.app.Fragments.BillingFragment"
+        android:label="@string/billing"
+        tools:layout="@layout/fragment_billing" />
+    <fragment
+        android:id="@+id/businessmanFragment"
+        android:name="com.kajoba.app.Fragments.BusinessmanFragment"
+        android:label="@string/my_businessman"
+        tools:layout="@layout/fragment_businessman" >
+        <action
+            android:id="@+id/action_networkFragment_to_newNetworkFragment"
+            app:destination="@id/newBusinessmanFragment" />
+        <action
+            android:id="@+id/action_networkFragment_to_detailBusinessmanFragment"
+            app:destination="@id/detailBusinessmanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partnersFragment"
+        android:name="com.kajoba.app.Fragments.PartnersFragment"
+        android:label="@string/partners"
+        tools:layout="@layout/fragment_partners" >
+        <action
+            android:id="@+id/action_partnersFragment_to_newPartnerFragment"
+            app:destination="@id/newPartnerFragment" />
+        <action
+            android:id="@+id/action_partnersFragment_to_detailPartnerFragment"
+            app:destination="@id/detailPartnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newClientFragment"
+        android:name="com.kajoba.app.Fragments.NewClientFragment"
+        android:label="@string/new_client"
+        tools:layout="@layout/fragment_new_client" >
+        <action
+            android:id="@+id/action_newClientFragment_to_clientsFragment"
+            app:destination="@id/clientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newBusinessmanFragment"
+        android:name="com.kajoba.app.Fragments.NewBusinessmanFragment"
+        android:label="@string/new_businessman"
+        tools:layout="@layout/fragment_new_businessman" />
+    <fragment
+        android:id="@+id/newPartnerFragment"
+        android:name="com.kajoba.app.Fragments.NewPartnerFragment"
+        android:label="@string/new_partner"
+        tools:layout="@layout/fragment_new_partner" />
+    <fragment
+        android:id="@+id/detailClientFragment"
+        android:name="com.kajoba.app.Fragments.DetailClientFragment"
+        android:label="@string/detail_client"
+        tools:layout="@layout/fragment_detail_client" />
+    <fragment
+        android:id="@+id/detailBusinessmanFragment"
+        android:name="com.kajoba.app.Fragments.DetailBusinessmanFragment"
+        android:label="@string/detail_businessman"
+        tools:layout="@layout/fragment_detail_businessman" />
+    <fragment
+        android:id="@+id/detailPartnerFragment"
+        android:name="com.kajoba.app.Fragments.DetailPartnerFragment"
+        android:label="@string/detail_partner"
+        tools:layout="@layout/fragment_detail_partner" />
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.kajoba.app.Fragments.DetailProductFragment"
+        android:label="@string/detail_product"
+        tools:layout="@layout/fragment_detail_product" />
+</navigation>

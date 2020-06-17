@@ -1,0 +1,6 @@
+0001;L.O.C. Limpiador concentrado multiusos;Home;LOC;0;0;0
+109848;SA8 Detergente en polvo para ropa 1k;Home;Detergente Polvo 1K;0;0;0
+6833;Crema Dental 200G Glister;Cuidado Personal;Crema Dental;0;0;0
+9949;Enjuague Bucal Concentrado;Cuidado Personal;Enjuague Glister;0;0;0
+120872;Máscara Multi-Beneficios;Belleza;Pestañina multibeneficio Artistry;0;0;0
+261748;Mascarilla Niveladora Purificante #TRATA;Belleza;Mascarilla niveladora Essential;0;0;0

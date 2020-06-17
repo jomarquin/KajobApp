@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DetailBusinessmanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_user_round"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Nombre">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_identification"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanIdentification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Cédula">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanIdentification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_codemp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanCod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Código empresario">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanCod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanPassCod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Contraseña empresario">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanPassCod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_call"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Teléfono">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_mail"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Correo">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_pass_mail"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanPassEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Contraseña correo">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanPassEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="@string/user_location">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_birthdate"
+                        android:layout_marginEnd="4dp"
+                        android:layout_gravity="bottom"
+                        android:tint="@color/colorPrimaryDark"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textFieldInfoBusinessmanBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextColor="@color/colorPrimary"
+                        android:hint="Fecha nacimiento">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/infoBusinessmanBirth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:paddingBottom="4dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:focusable="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/btnCallPartner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call_36"
+                        android:tint="@color/colorAccent"
+                        android:backgroundTintMode="add"
+                        android:contentDescription="@string/cal_client" />
+                    <ImageButton
+                        android:id="@+id/btnDeletePartner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_delete_36"
+                        android:tint="@color/colorAccent"
+                        android:backgroundTintMode="add"
+                        android:contentDescription="Eliminar Socio" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/layoutBtnUpdateBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="bottom">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdateBusiness"
+                style="@style/Widget.KajobApp.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/update"
+                app:icon="@drawable/ic_update_24"
+                app:iconTint="@color/colorPrimaryDark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelUpdateBusiness"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toStartOf="@id/btnUpdateBusiness"
+                android:gravity="center"
+                android:text="@string/btn_cancel"
+                android:textColor="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditBusinessman"
+            style="@style/Widget.KajobApp.Button"
+            app:icon="@drawable/ic_save_24"
+            app:iconTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/edit_info_client" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
